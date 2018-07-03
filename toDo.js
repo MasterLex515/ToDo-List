@@ -33,8 +33,13 @@ function newElement() {
   var currentDate = new Date();
   //maybe used later as id for data-storage
   //var time = currentDate.getTime();
+  var month=currentDate.getMonth();
+  var year=currentDate.getFullYear();
+  var day=currentDate.getDate();
+  var hour=currentDate.getHours();
+  var minute=currentDate.getMinutes();
   var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue+" - "+currentDate);
+  var t = document.createTextNode(inputValue+" --- "+day+"."+month+"."+year+"-"+hour+":"+minute);
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
