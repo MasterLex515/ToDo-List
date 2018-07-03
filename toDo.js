@@ -33,6 +33,7 @@ function newElement() {
   var currentDate = new Date();
   //maybe used later as id for data-storage
   //var time = currentDate.getTime();
+  //added Date and Time (without displayed seconds)
   var month=currentDate.getMonth();
   var year=currentDate.getFullYear();
   var day=currentDate.getDate();
